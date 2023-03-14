@@ -11,6 +11,7 @@
 		
 		"proj speed": "Projectile speed: %su/s",
 		
+		"proj hitpoints": "Projectile health: %shp",
 		"launch speed": "Launch speed: %su/s",
 		"flight time": "Flight time: %ss",
 		

@@ -100,6 +100,16 @@ public class WhichTMIModPlugin extends BaseModPlugin
 					
 					if (stringNotEmptyOrNull(spec.getCustomAncillaryHL()))
 						data.append(spec.getCustomAncillaryHL());
+					else
+						{
+						String currentDesc = desc.toString();
+						if (stringNotEmptyOrNull(currentDesc))
+							{
+							// We are nearly guaranteed to have at least one format string, and it's better to sometimes have erroring doubling up '%'s than to crash.
+							currentDesc = currentDesc.replace("%", "%%");
+							desc = new StringBuilder(currentDesc);
+							}
+						}
 					
 					desc.append(safety);
 					desc.append("\n");
@@ -126,6 +136,8 @@ public class WhichTMIModPlugin extends BaseModPlugin
 						if (proj != null && proj instanceof MissileSpecAPI)
 							{
 							MissileSpecAPI miss = (MissileSpecAPI) proj;
+							tryPrintStatNumber("proj hitpoints", row, desc, data);
+							
 							tryPrintStatNumber("launch speed", row, desc, data);
 							tryPrintStatNumber("flight time", row, desc, data);
 							
