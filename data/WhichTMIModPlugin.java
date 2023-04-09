@@ -122,7 +122,11 @@ public class WhichTMIModPlugin extends BaseModPlugin
 					// Beam hidden stats
 					// None!
 						
-					if (!spec.isBeam())
+					if (spec.isBeam())
+						{
+						tryPrintStatNumber("beam speed", row, desc, data);
+						}
+					else
 						{
 						// Projectile hidden stats
 							{

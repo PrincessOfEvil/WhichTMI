@@ -11,6 +11,8 @@
 		
 		"proj speed": "Projectile speed: %su/s",
 		
+		"beam speed": "Beam speed: %su/s",
+		
 		"proj hitpoints": "Projectile health: %shp",
 		"launch speed": "Launch speed: %su/s",
 		"flight time": "Flight time: %ss",
@@ -20,6 +22,6 @@
 		"getDeceleration": "Deceleration: %su/s²",
 		
 		"getMaxTurnRate": "Max turn rate: %s°/s",
-		"getTurnAcceleration": "Turn acceleration: %s°/s²",
+		"getTurnAcceleration": "Turn acceleration: %s°/s²"
 	}
 }
