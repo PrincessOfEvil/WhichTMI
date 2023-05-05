@@ -4,6 +4,6 @@
 	"author":"Princess of Evil",
 	"version":"1.0.1",
 	"description":"Tells you what stats something has, WhichMod style.",
-	"gameVersion":"0.95.1a-RC5",
+	"gameVersion":"0.96a-RC6",
 	"modPlugin":"data.WhichTMIModPlugin"
 }
