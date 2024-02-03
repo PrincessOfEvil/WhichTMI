@@ -172,9 +172,9 @@ public class WhichTMIModPlugin extends BaseModPlugin
 						data.delete(0,3);
 					spec.setCustomAncillaryHL(data.toString());
 					
-					logger.log(Level.INFO, id);
-					logger.log(Level.INFO, desc.toString());
-					logger.log(Level.INFO, data.toString());
+		//			logger.log(Level.INFO, id);
+		//			logger.log(Level.INFO, desc.toString());
+		//			logger.log(Level.INFO, data.toString());
 					}
 				else logger.log(Level.INFO, row.toString());
 
